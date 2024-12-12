@@ -10,8 +10,8 @@ inputs:
   service-name:
     description: '서비스 이름'
     required: true
-  environments:
-    description: '환경 설정 문자열'
+  environment:
+    description: '환경 이름'
     required: true
   config-endpoint:
     description: '설정 파일 엔드포인트'
