@@ -1,0 +1,21 @@
+name: 'Configuration File Injector'
+description: 'Configuration File Injector'
+inputs:
+  file-path:
+    description: '생성할 파일의 경로'
+    required: true
+  secret:
+    description: '시크릿 문자열'
+    required: true
+  service-name:
+    description: '서비스 이름'
+    required: true
+  environments:
+    description: '환경 설정 문자열'
+    required: true
+  config-endpoint:
+    description: '설정 파일 엔드포인트'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js' 
